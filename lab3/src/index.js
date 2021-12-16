@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css";
+import Car from "./components/Car";
+import People from "./components/People";
+import Table from "./components/Table";
 
-const numbers = [10, 20, 30];
-const text = (
+ReactDOM.render(
   <>
-    <div>Holle World !!! React {numbers[0] + numbers[2]}</div>
-    <h3 className="red">My name is Chaiyapot</h3>
-  </>
+    <Car brand="toyota" />
+    <People />
+  </>,  
+document.getElementById("root")
 );
-
-
-
-ReactDOM.render(<Car brand="Toyota" />, document.getElementById("root"));
 
 
